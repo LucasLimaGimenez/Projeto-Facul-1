@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link para o BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- link para o CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- link para o FontAwesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Challenge Sprint-Amigos da Onça</title>
+</head>
+<body class="bg-dark">
+    <header class="bg-danger">
+        <div class="centralizado">
+        <img src="./img/logo-removebg-preview.png" alt="" class="mt-3">
+        <h1 class="text-light display-2 mt-4 ml-2">Amigos da Onça</h1>
+        </div>
+        <nav class="mt-4 pb-4">
+            <ul>
+                <li><a href="index.html" class="menu-opcoes">Home</a></li>
+                <li><a href="imagens.html" class="menu-opcoes">Imagens</a></li>
+                <li><a href="armas.html" class="menu-opcoes">Sistema de Armas</a></li>
+                <li><a href="hardware.html" class="menu-opcoes">Hardwares</a></li>
+                <li><a href="inspiracoes.html" class="menu-opcoes">Inspirações</a></li>
+                <li><a href="grupo.html" class="menu-opcoes">Grupo</a></li>
+                <li><a class="menu-opcoes marcado">Contato</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <form class="formulario text-light text-center mt-5"> 
+        
+        <h2 class="bg-danger arredondamento">Formulário de Contato</h2>
+        
+        <div class="dados">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" class="input-text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+        </div>
+        
+        <div class="dados">
+            <label for="telefone">Seu Telefone:</label>
+            <input type="text" class="input-text" id="telefone" name="telefone" placeholder="Digite seu Telefone*">
+        </div>
+
+        <div class="dados">
+            <label for="email">Seu E-Mail:</label>
+            <input type="email" class="input-email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+        </div>        
+        <div class="dados radiobox">
+            <span>Deseja receber nossas novidades?</span>
+            <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+            <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+        </div>
+        <div class="dados">
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+        </div>
+
+        <input type="submit" class="input-enviar" name="acao" value="Enviar" onclick="EnviarDados()">
+    </form>
+        
+
+    <footer class="bg-danger mt-5">
+        <div class="centralizado-footer">
+            <div class="centralizado">
+            <img src="./img/logo-removebg-preview.png" alt="" class="imagem-footer mt-4">
+            <h1 class="text-light display-4 mt-4 ml-2">Amigos da Onça</h1>
+            </div>
+            <div class="redes-sociais">
+                <h4 class="text-light mt-4">Quer tirar uma dúvida? Nos chame em nossas redes sociais!</h4>
+                <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram tamanho-icone"></i></a>
+                <a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook tamanho-icone"></i></a>
+                <a href="https://www.twitter.com/" target="blank"><i class="fab fa-twitter tamanho-icone"></i></a>
+                <a href="https://www.reddit.com/" target="blank"><i class="fab fa-reddit tamanho-icone" ></i></a>
+                <a href="https://br.pinterest.com/" target="blank"><i class="fab fa-pinterest tamanho-icone"></i></a>
+            </div>
+            
+            </div>
+    </footer>
+    
+    <script src="./js/formulario.js"></script>
+</body>
+</html>
